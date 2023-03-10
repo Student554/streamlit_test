@@ -10,7 +10,7 @@ url = st.sidebar.text_input('URL','')
 
 
 if url:
-    st.header('Output')
+    (_main.header)('Output')
     st.info(f'URL of Data : {url}')
     df = pd.read_csv(url)
     st.write(df)
